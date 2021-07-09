@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            background-color: #DDD
+        }
+
+        .wrapper {
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+            background-color: #ccc;
+            padding: 50px;
+        }
+
+        .wrapper button {
+            width: 20%;
+            margin: 5px auto;
+            padding: 10px 15px;
+            border: 1px solid #DDD;
+            background-color: #FFF;
+            color: #000;
+            cursor: pointer;
+        }
+        .result1, .result2 {
+            font-weight: bold;
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Play Winning Game - 2 persons</h1>
+        <div class="output">
+            <p>User 1 Score: <span class="result1">0</span></p>
+            <p>User 2 Score:<span class="result2">0</span></p>
+            <p class="show">Winning Score: 5</p>
+        </div>
+
+        <button class="user1">User 1</button>
+        <button class="user2">User 2</button>
+        <button class="reset">Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
