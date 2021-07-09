@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        textarea {
+            border: 1px solid #DDD;
+            display: block;
+            resize: none;
+            margin: 0 0 30px;
+            width: 30%;
+            height: 80px;
+            padding: 5px;
+        }
+        button#btn {
+            display: inline-block;
+            border: 1px solid #DDD;
+            background-color: #333;
+            color:#FFF;
+            padding: 15px 50px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Copy to clip board.</h1>
+
+    <div class="wrapped">
+        <textarea id="data" placeholder="Type something..."></textarea>
+        <button id="btn" type="button">Copy</button>
+
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>
