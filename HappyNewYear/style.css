@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: lightseagreen;
+  background-blend-mode: hard-light;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  flex-direction: column;
+  box-shadow: 0 50px 50px rgb(0 0 0 / 50%);
+  padding: 30px 30px 80px;
+  margin: 80px 100px;
+}
+.countdown {
+  display: flex;
+}
+.countdown div {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background: lightseagreen;
+  color: #fff;
+  margin: 5px 15px;
+  font-size: 1.5em;
+  position: relative;
+}
+
+.container span {
+  display: block;
+  font-size: 4.2em;
+  color: #000;
+}
+.container h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.countdown div::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -40px;
+  width: 100%;
+  background: #333;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.countdown div.day::after {
+  content: "Day";
+}
+
+.countdown div.hour::after {
+  content: "Hour";
+}
+
+.countdown div.minute::after {
+  content: "Minute";
+}
+
+.countdown div.second::after {
+  content: "Second";
+}
+
+@media screen and (max-width: 768px) {
+  .countdown {
+    flex-direction: column;
+  }
+  .countdown div {
+    margin-bottom: 50px;
+  }
+}
