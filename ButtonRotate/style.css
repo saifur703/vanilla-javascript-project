@@ -1,0 +1,28 @@
+#btns {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  margin: 0 auto;
+}
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6,
+#btn7,
+#btn8,
+#btn9 {
+  height: 48px;
+  font-size: 24px;
+  background: #ddd;
+  text-align: center;
+  margin: 5px;
+  line-height: 48px;
+  user-select: none;
+}
+#btn5 {
+  background: lightcoral;
+  color: #fff;
+  cursor: pointer;
+}
