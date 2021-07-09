@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .container .btn {
+            background: lightgreen;
+            color: #000;
+            font-size: 30px;
+            padding: 15px 30px;
+            user-select: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="btn">Click here</div>
+    </div>
+
+    <script>
+        let btn = document.querySelector(".btn");
+        btn.addEventListener("click", function () {
+            let rand1 = Math.floor(Math.random() * 256);
+            let rand2 = Math.floor(Math.random() * 256);
+            let rand3 = Math.floor(Math.random() * 256);
+            document.querySelector("body").style.backgroundColor = `rgb(${rand1},${rand2},${rand3})`;
+
+            console.log(rand1, rand2, rand3)
+        });
+    </script>
+</body>
+
+</html>
