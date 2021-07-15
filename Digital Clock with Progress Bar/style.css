@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper {
+  background: #ccc;
+  width: 300px;
+  margin: 30px auto;
+}
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 140px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.clock-container::after {
+  position: absolute;
+  content: "";
+  left: 30px;
+  top: 30px;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  background: #333;
+  z-index: -1;
+}
+.hours,
+.minutes,
+.seconds {
+  padding: 0px 15px;
+  font-size: 34px;
+  position: relative;
+}
+.dayNight {
+  font-size: 12px;
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
+.hours::before,
+.minutes::before,
+.seconds::before {
+  position: absolute;
+  content: "Hours";
+  left: 20px;
+  top: -40px;
+  font-size: 15px;
+  color: #333;
+}
+
+.minutes::before {
+  content: "Minutes";
+}
+
+.seconds::before {
+  content: "Seconds";
+}
+div#progress {
+  width: 40%;
+  height: 4px;
+  background: #333;
+}
