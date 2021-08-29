@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: aquamarine;
+  font-size: 20px;
+  margin: 30px auto;
+}
+
+body h1 {
+  text-align: center;
+}
+
+div#main {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+form#form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+form#form input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  margin: 20px 0;
+}
+
+.card {
+  margin: 0 auto;
+  background: black;
+  padding: 30px;
+  color: #fff;
+}
+
+.user-img img {
+  border-radius: 50%;
+  max-width: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.user-info h2 {
+  margin-bottom: 20px;
+  color: aquamarine;
+}
+.user-info strong {
+  color: aquamarine;
+}
+.user-info a {
+  color: gray;
+}
+.error-message {
+  color: red;
+}
