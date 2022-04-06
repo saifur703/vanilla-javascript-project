@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy Cut Paste</title>
+
+    <style>
+      form div {
+        margin-bottom: 15px;
+      }
+      form input,
+      form button {
+        font-size: 18px;
+        padding: 10px;
+      }
+      form button {
+        min-width: 80px;
+        display: inline-block;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <input
+          type="text"
+          name="copy"
+          id="copy"
+          placeholder="Write Text"
+          value=""
+        />
+        <button id="copyBtn">Copy</button>
+      </div>
+      <div>
+        <input
+          type="text"
+          name="cut"
+          id="cut"
+          placeholder="Write Text"
+          value=""
+        />
+        <button id="cutBtn">Cut</button>
+      </div>
+      <div>
+        <input
+          type="text"
+          name="paste"
+          id="paste"
+          placeholder="Write Text"
+          value=""
+        />
+        <button id="pasteBtn">Paste</button>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
