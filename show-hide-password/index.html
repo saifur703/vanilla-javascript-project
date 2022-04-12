@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Hide Password</title>
+
+    <style>
+      body,
+      * {
+        font-size: 1.3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <form action="">
+        <input type="password" name="pass" id="pass" />
+        <input type="checkbox" name="check" id="check" /> Show password
+      </form>
+    </div>
+
+    <script>
+      let password = document.getElementById("pass");
+      let checkbox = document.getElementById("check");
+      checkbox.addEventListener("click", function () {
+        if (password.type == "password") {
+          password.type = "text";
+        } else {
+          password.type = "password";
+        }
+      });
+    </script>
+  </body>
+</html>
