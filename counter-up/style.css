@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.single-counter {
+  width: 150px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 0 10px;
+  border-radius: 50%;
+  height: 150px;
+  padding-top: 50px;
+  margin: 30px 40px;
+}
+
+.single-counter h3 {
+  font-size: 16px;
+}
+
+.single-counter span {
+  font-size: 50px;
+  font-weight: 900;
+}
