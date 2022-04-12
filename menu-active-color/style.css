@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu li a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: 1.2em;
+}
+
+.menu {
+  background: brown;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.menu li a:hover {
+  background: white;
+  color: brown;
+  border-radius: 2px;
+}
