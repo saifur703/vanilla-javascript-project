@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.3rem;
+}
+img {
+  vertical-align: middle;
+}
+.single-slider img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+}
+
+.controls span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 50px;
+  margin-top: -25px;
+  background: #fff;
+  line-height: 50px;
+  padding: 0 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: 0.8;
+  user-select: none;
+}
+
+span.prev {
+  left: 2rem;
+}
+
+span.next {
+  left: auto;
+  right: 2rem;
+}
+
+.controls span:hover {
+  opacity: 1;
+}
