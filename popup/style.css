@@ -72,7 +72,7 @@
   text-align: right;
 }
 
-.modal-close button,
+.modal-close a,
 button {
   border: none;
   background: cadetblue;
@@ -90,7 +90,10 @@ button {
   margin-top: 30px;
   cursor: pointer;
 }
-.modal-close button:hover,
+.modal-close a {
+  display: inline-block;
+}
+.modal-close a:hover,
 .container button:hover {
   cursor: pointer;
   background: crimson;
