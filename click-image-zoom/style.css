@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  user-select: none;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.main-image img {
+  width: 700px;
+  cursor: no-drop;
+}
+
+.sub-image img {
+  width: 140px;
+  height: 175px;
+  object-fit: cover;
+  cursor: pointer;
+}
