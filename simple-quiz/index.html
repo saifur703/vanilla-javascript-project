@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Quiz</title>
+
+    <style>
+      body {
+        font-size: 1.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <form action="">
+        <p>
+          Q-1: What is 1 + 1 = ? <br />
+          <input type="radio" name="q1" />
+          <label for="q1">1</label> <br />
+
+          <input type="radio" name="q1" id="q1" />
+          <label for="q1">2</label> <br />
+
+          <input type="radio" name="q1" />
+          <label for="q1">3</label> <br />
+
+          <input type="radio" name="q1" />
+          <label for="q1">4</label>
+        </p>
+        <p>
+          Q-2: What is 5 + 5 = ? <br />
+          <input type="radio" name="q2" id="q2" />
+          <label for="q2">10</label> <br />
+
+          <input type="radio" name="q2" />
+          <label for="q2">20</label> <br />
+
+          <input type="radio" name="q2" />
+          <label for="q2">30</label> <br />
+
+          <input type="radio" name="q2" />
+          <label for="q2">40</label>
+        </p>
+        <p>
+          Q-3: What is 15 + 25 = ? <br />
+          <input type="radio" name="q3" />
+          <label for="q3">10</label> <br />
+
+          <input type="radio" name="q3" />
+          <label for="q3">20</label> <br />
+
+          <input type="radio" name="q3" />
+          <label for="q3">30</label> <br />
+
+          <input type="radio" name="q3" id="q3" />
+          <label for="q3">40</label>
+        </p>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      let form = document.querySelector("form");
+      let q1 = document.querySelector("#q1");
+      let q2 = document.querySelector("#q2");
+      let q3 = document.querySelector("#q3");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        let count = 0;
+        if (q1.checked) {
+          count++;
+        }
+        if (q2.checked) {
+          count++;
+        }
+        if (q3.checked) {
+          count++;
+        }
+
+        document.body.innerHTML = `<h1>Result is: ${count}</h1>`;
+
+        reloadPage();
+      });
+
+      function reloadPage() {
+        let btn = document.createElement("button");
+        btn.innerText = "Play again";
+        btn.addEventListener("click", function () {
+          window.location.reload();
+        });
+        document.body.appendChild(btn);
+      }
+    </script>
+  </body>
+</html>
