@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: antiquewhite;
+  width: 100%;
+  height: 56px;
+  text-align: right;
+  padding: 10px 30px;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  cursor: pointer;
+  width: 50px;
+  margin-left: auto;
+}
+.hamburger span {
+  width: 30px;
+  height: 2px;
+  background: #000;
+  margin: 5px 0;
+  display: block;
+}
+.hamburger span {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.hamburger.menu-open span:nth-child(2) {
+  display: none;
+}
+
+.hamburger.menu-open span:nth-child(1) {
+  transform: rotate(45deg);
+  margin-right: 0px;
+  margin-top: 20px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.hamburger.menu-open span:nth-child(3) {
+  transform: rotate(-45deg);
+  margin-top: -8px;
+  margin-right: 0px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+.nav-menu {
+  width: 250px;
+  padding: 20px;
+  background: rgb(249, 225, 195);
+  position: fixed;
+  left: -250px;
+  top: 0;
+  padding-top: 60px;
+  height: 100%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.nav-menu.open {
+  left: 0;
+}
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu li {
+  display: block;
+}
+
+.nav-menu li a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.nav-menu li a:hover {
+  background: blueviolet;
+  color: #fff;
+}
