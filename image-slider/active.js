@@ -26,3 +26,13 @@ function prevFunc() {
 
   singleSlider.src = imgs[count];
 }
+
+setInterval(function () {
+  count++;
+  singleSlider.src = imgs[count];
+
+  if (count >= imgs.length) {
+    count = 0;
+    singleSlider.src = imgs[count];
+  }
+}, 3000);
