@@ -22,6 +22,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
+  background-color: darkmagenta;
 }
 .container {
   padding: 0 2rem;

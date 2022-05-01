@@ -5,13 +5,13 @@ let title = document.querySelector(".title");
 
 lightOn.addEventListener("click", function () {
   for (let i = 0; i < img.length; i++) {
-    img[i].src = "pic_bulbOn.gif";
+    img[i].src = "pic_bulbon.gif";
     title.innerHTML = "Light ON";
   }
 });
 lightOff.addEventListener("click", function () {
   for (let i = 0; i < img.length; i++) {
-    img[i].src = "pic_bulbOff.gif";
+    img[i].src = "pic_bulboff.gif";
     title.innerHTML = "Light OFF";
   }
 });
