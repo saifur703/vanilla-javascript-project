@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1></h1>
+    <div class="container">
+      <input type="text" class="result" />
+      <div class="first-row">
+        <input
+          type="button"
+          name=""
+          value="&radic;"
+          class="global"
+          onclick="sqrt()"
+        />
+        <input
+          type="button"
+          name=""
+          value="("
+          class="global"
+          onclick="func('(')"
+        />
+        <input
+          type="button"
+          name=""
+          value=")"
+          class="global"
+          onclick="func(')')"
+        />
+        <input
+          type="button"
+          name=""
+          value="%"
+          class="global"
+          onclick="func('%')"
+        />
+      </div>
+      <div class="second-row">
+        <input
+          type="button"
+          name=""
+          value="7"
+          class="global"
+          onclick="func('7')"
+        />
+        <input
+          type="button"
+          name=""
+          value="8"
+          class="global"
+          onclick="func('8')"
+        />
+        <input
+          type="button"
+          name=""
+          value="9"
+          class="global"
+          onclick="func('9')"
+        />
+        <input
+          type="button"
+          name=""
+          value="/"
+          class="global"
+          onclick="func('/')"
+        />
+      </div>
+      <div class="third-row">
+        <input
+          type="button"
+          name=""
+          value="4"
+          class="global"
+          onclick="func('4')"
+        />
+        <input
+          type="button"
+          name=""
+          value="5"
+          class="global"
+          onclick="func('5')"
+        />
+        <input
+          type="button"
+          name=""
+          value="6"
+          class="global"
+          onclick="func('6')"
+        />
+        <input
+          type="button"
+          name=""
+          value="X"
+          class="global"
+          onclick="func('x')"
+        />
+      </div>
+      <div class="fourth-row">
+        <input
+          type="button"
+          name=""
+          value="1"
+          class="global"
+          onclick="func('1')"
+        />
+        <input
+          type="button"
+          name=""
+          value="2"
+          class="global"
+          onclick="func('2')"
+        />
+        <input
+          type="button"
+          name=""
+          value="3"
+          class="global"
+          onclick="func('3')"
+        />
+        <input
+          type="button"
+          name=""
+          value="-"
+          class="global"
+          onclick="func('-')"
+        />
+      </div>
+      <div class="conflict">
+        <div class="left">
+          <input
+            type="button"
+            name=""
+            value="0"
+            class="big"
+            onclick="func('0')"
+          />
+          <input
+            type="button"
+            name=""
+            value="."
+            class="small"
+            onclick="func('.')"
+          />
+          <input
+            type="button"
+            name=""
+            value="Del"
+            class="red small white-text top-margin"
+            onclick="del()"
+          />
+          <input
+            type="button"
+            name=""
+            value="="
+            class="green white-text big top-margin"
+            onclick="calc()"
+          />
+        </div>
+        <div class="right">
+          <input
+            type="button"
+            name=""
+            value="+"
+            class="global grey plus"
+            onclick="func('+')"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
