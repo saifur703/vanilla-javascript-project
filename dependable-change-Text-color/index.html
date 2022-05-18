@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dependable change Text color</title>
+
+    <style>
+      body {
+        width: 370px;
+        margin: 20px auto;
+      }
+      .controls select {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .output {
+        font-size: 16px;
+        background: gray;
+        padding: 15px;
+      }
+      .underline {
+        text-decoration: underline;
+      }
+      .italic {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="controls">
+      <select class="fontSize">
+        <option value="" disabled selected>Select Font Size</option>
+        <option value="16px">Default</option>
+        <option>20px</option>
+        <option>30px</option>
+        <option>40px</option>
+        <option>50px</option>
+      </select>
+      <br />
+      <select class="textColor">
+        <option value="" disabled selected>Select Text Color</option>
+        <option value="black">Default</option>
+        <option>red</option>
+        <option>green</option>
+        <option>blue</option>
+        <option>white</option>
+      </select>
+      <br />
+      <select class="bgColor">
+        <option value="" disabled selected>Select Background Color</option>
+        <option value="gray">Default</option>
+        <option>red</option>
+        <option>green</option>
+        <option>blue</option>
+        <option>black</option>
+      </select>
+      <button class="underline">U</button>
+      <button class="italic">I</button>
+    </div>
+    <div class="output">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+        corrupti saepe, aliquid totam nisi unde, fugiat necessitatibus ratione
+        iusto sed a. Hic assumenda inventore, veritatis sunt temporibus quas
+        impedit suscipit!
+      </p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
