@@ -1,7 +1,7 @@
 const speechRecognition =
   window.speechRecognition || window.webkitSpeechRecognition;
 
-const status = document.querySelector("#status");
+const showStatus = document.querySelector("#show-status");
 const result = document.querySelector("#result");
 const speak = document.querySelector("#speak");
 
@@ -10,12 +10,12 @@ const startRecognition = () => {
     let recognition = new speechRecognition();
 
     recognition.onstart = () => {
-      status.innerHTML = `Starting listening, speak in the microphone please.`;
+      showStatus.innerHTML = `Starting listening, speak in the microphone please.`;
       result.classList.add("hide");
     };
 
     recognition.onspeechend = () => {
-      status.innerHTML = `I stopped listening.`;
+      showStatus.innerHTML = `I stopped listening.`;
       recognition.stop();
     };
 
@@ -28,7 +28,7 @@ const startRecognition = () => {
 
     recognition.start();
   } else {
-    status.innerHTML = "sorry not supported 😭";
+    showStatus.innerHTML = "sorry not supported 😭";
   }
 };
 
