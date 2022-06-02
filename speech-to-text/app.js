@@ -2,10 +2,10 @@ const speechRecognition =
   window.speechRecognition || window.webkitSpeechRecognition;
 
 const status = document.querySelector("#status");
-
 const result = document.querySelector("#result");
+const speak = document.querySelector("#speak");
 
-startRecognition = () => {
+const startRecognition = () => {
   if (speechRecognition !== undefined) {
     let recognition = new speechRecognition();
 
@@ -31,3 +31,5 @@ startRecognition = () => {
     status.innerHTML = "sorry not supported 😭";
   }
 };
+
+speak.addEventListener("click", startRecognition);
