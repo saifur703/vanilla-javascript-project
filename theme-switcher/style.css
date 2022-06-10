@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--color-4);
+}
+body[data-theme="light"] {
+  --background: rgb(196, 220, 241);
+  --white: white;
+  --btn: gray;
+  --txt: black;
+}
+body[data-theme="dark"] {
+  --background: #1e1f26;
+  --white: #292c33;
+  --btn: #1e1f26;
+  --txt: white;
+}
+section {
+  background-color: var(--background);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--txt);
+}
+p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: var(--txt);
+}
+button {
+  background-color: var(--btn);
+  padding: 10px 30px;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--txt);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.theme-switcher {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+input {
+  width: 0;
+  height: 0;
+  display: none;
+  visibility: hidden;
+}
+label {
+  cursor: pointer;
+  display: block;
+  text-indent: -9999px;
+  height: 30px;
+  width: 60px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s ease background-color;
+  -webkit-transition: 0.5s ease background-color;
+  -moz-transition: 0.5s ease background-color;
+  -ms-transition: 0.5s ease background-color;
+  -o-transition: 0.5s ease background-color;
+}
+label::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  background-color: rgb(46, 42, 68);
+  transition: 0.5s ease;
+}
+input:checked + label::after {
+  /* left: calc(100% - 2.5px); */
+  left: calc(100% - 25px);
+  background-color: aliceblue;
+}
+input:checked + label {
+  background-color: rgb(25, 26, 37);
+  border: 2px solid whitesmoke;
+}
