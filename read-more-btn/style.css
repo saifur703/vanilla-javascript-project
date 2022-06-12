@@ -1,0 +1,25 @@
+body {
+  text-align: justify;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgb(18, 23, 27);
+  color: aliceblue;
+}
+.text {
+  font-size: 24px;
+}
+.moreText {
+  display: none;
+}
+button {
+  padding: 15px 60px;
+  background-color: darkmagenta;
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.text.show-more .moreText {
+  display: inline;
+}
