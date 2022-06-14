@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h2><span class="hl">JavaScript</span> Box Shadow Generator</h2>
+
+      <div class="wrapper">
+        <div class="controls">
+          <div>
+            <label for="radius">Border Radius:</label>
+            <input
+              type="range"
+              name="radius"
+              id="radius"
+              value="0"
+              min="0"
+              max="150"
+              data-sizing="px"
+            />
+          </div>
+          <div>
+            <label for="off-x">Offset-x:</label>
+            <input
+              type="range"
+              name="off-x"
+              id="off-x"
+              value="0"
+              min="-50"
+              max="50"
+              data-sizing="px"
+            />
+          </div>
+          <div>
+            <label for="off-y">Offset-y:</label>
+            <input
+              type="range"
+              name="off-y"
+              id="off-y"
+              value="0"
+              min="-50"
+              max="50"
+              data-sizing="px"
+            />
+          </div>
+          <div>
+            <label for="blur">Blur:</label>
+            <input
+              type="range"
+              name="blur"
+              id="blur"
+              value="5"
+              min="0"
+              max="25"
+              data-sizing="px"
+            />
+          </div>
+          <div>
+            <label for="spread">Spread:</label>
+            <input
+              type="range"
+              name="spread"
+              id="spread"
+              value="5"
+              min="0"
+              max="200"
+              data-sizing="px"
+            />
+          </div>
+          <div>
+            <label for="base">Base Color:</label>
+            <input type="color" name="base" id="base" value="#000000" />
+          </div>
+        </div>
+      </div>
+
+      <div class="output">
+        <span>copy</span>
+        <div class="result">
+          <p class="border-radius">border radius: 0px;</p>
+          <p class="box-shadow">box-shadow: 0px 0px 5px 5px #000000;</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="active.js"></script>
+  </body>
+</html>
